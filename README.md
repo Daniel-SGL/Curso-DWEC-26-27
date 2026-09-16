@@ -1,1 +1,8 @@
-# Curso-DWEC-26-27
+# \# Repositorio Curso DWEC 2026\_2027
+
+# > Autor: Daniel-SGL
+
+# 
+
+# \## Indice
+
