@@ -1,0 +1,13 @@
+{
+  "name": "00_tema_introduccion",
+  "version": "1.0.0",
+  "description": "Ejemplos basico uso de Javascript",
+  "license": "ISC",
+  "author": "Daniel SG",
+  "type": "module",
+  "main": "ejercicio1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lanzar":"node ejercicio1.js"
+  }
+}
