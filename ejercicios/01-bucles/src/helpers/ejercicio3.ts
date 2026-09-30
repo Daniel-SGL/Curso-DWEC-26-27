@@ -38,6 +38,10 @@ function obtenerNombres(alumnos : Alumno[]){
 
 const obtenerNombresV2 = (alumnos: Alumno[]) => alumnos.map( (alumno) => alumno.nombre )
 
+function obtenerMediaAlumno(alumnos : Alumno[]){
+  return alumnos.map( (alumno) => alumno.notas )
+}
+
 // ---- Iniciarlizar el ejercicio ----
 //
  console.log("El nombre de los alumnos es: ")
