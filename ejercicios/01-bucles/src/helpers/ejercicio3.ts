@@ -38,8 +38,18 @@ function obtenerNombres(alumnos : Alumno[]){
 
 const obtenerNombresV2 = (alumnos: Alumno[]) => alumnos.map( (alumno) => alumno.nombre )
 
-function obtenerMediaAlumno(alumnos : Alumno[]){
-  return alumnos.map( (alumno) => alumno.notas )
+function obtenerMediaAlumnos(alumnos: Alumno[]){
+  for(const alumno of alumnos){
+    let media = 0
+    for(const nota of alumno.notas){
+      media += nota
+    }
+    media = media/alumno.notas.length
+    return {
+      media,
+      nombre: alumno.nombre
+    }
+  }
 }
 
 // ---- Iniciarlizar el ejercicio ----
