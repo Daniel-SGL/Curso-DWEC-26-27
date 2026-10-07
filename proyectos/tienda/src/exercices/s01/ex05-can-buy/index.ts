@@ -7,6 +7,6 @@ import type { Product } from "../../../types/product";
 
 export function canBuy(list: Product[], id: number, quantity: number): boolean {
 
-  return list.find(product => product.id === id) !== undefined ? ((quantity >> 0) && (list[id].stock >= quantity) ? true : false) : false
+  return list.find(product => product.id === id) !== undefined ? ((quantity >> 0) && (list.find(product => product.id === id)?.stock >= quantity) ? true : false) : false
 
 }
