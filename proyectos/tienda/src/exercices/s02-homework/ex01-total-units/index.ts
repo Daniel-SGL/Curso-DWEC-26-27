@@ -9,6 +9,8 @@ import type { Product } from "../../../types/product";
 
 export function totalUnits(list: Product[]): number {
 
-
+  return list.reduce((acumulador, product) => {
+    return acumulador + product.stock;
+  }, 0)
 
 }

@@ -7,6 +7,7 @@ import type { Category, Product } from "../../../types/product";
 
 export function byCategory(list: Product[], category: Category): Product[] {
 
-  return list.filter(product => product.category === category)
+  return list
+    .filter(product => product.category === category)
 
 }

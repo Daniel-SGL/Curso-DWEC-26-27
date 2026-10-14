@@ -14,6 +14,10 @@ import { soldOutNames } from "./exercices/s01/ex02-sold-out-names";
 import { byCategory } from "./exercices/s01/ex03-by-category";
 import { priceOf } from "./exercices/s01/ex04-price-of";
 import { canBuy } from "./exercices/s01/ex05-can-buy";
+import { cheapestAvailable } from "./exercices/s02-homework/ex02-cheapest-available";
+import { totalUnits } from "./exercices/s02-homework/ex01-total-units";
+import { catalog } from "./exercices/s02-homework/ex03-catalog";
+import { summary } from "./exercices/s02-homework/ex04-summary";
 
 // mostrar todos los productos
 //
@@ -49,3 +53,15 @@ console.log(
 
 console.log('ejercicio 6', allInStock([]))
 console.log("-----------------------------------------------------")
+
+console.log("")
+console.log("------------Relacion de ejercicios Nº2---------------")
+console.log('ejercicio 1', totalUnits(products), totalUnits([]));
+const cheapest = cheapestAvailable(products);
+if (cheapest !== undefined) {
+  console.log('ejercicio 2', cheapest.name);
+}
+console.log('ejercicio 2', cheapestAvailable([]));
+console.log('ejercicio 3', catalog(products));
+console.log('ejercicio 4', summary(products));
+console.log('ejercicio 4', summary([]));
