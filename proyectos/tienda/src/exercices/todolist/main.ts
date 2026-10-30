@@ -8,7 +8,7 @@ import {
   pendingByPriority,
 } from "./helpers/todolist"; // Ajusta la ruta a tu fichero
 
-function main() {
+export function main() {
   console.log("=== 1. Creando lista inicial de tareas ===");
   let tasks: Task[] = [];
 

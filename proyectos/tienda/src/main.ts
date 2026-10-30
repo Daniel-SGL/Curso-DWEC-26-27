@@ -18,6 +18,7 @@ import { cheapestAvailable } from "./exercices/s02-homework/ex02-cheapest-availa
 import { totalUnits } from "./exercices/s02-homework/ex01-total-units";
 import { catalog } from "./exercices/s02-homework/ex03-catalog";
 import { summary } from "./exercices/s02-homework/ex04-summary";
+import { main } from "./exercices/todolist/main";
 
 // mostrar todos los productos
 //
@@ -65,3 +66,6 @@ console.log('ejercicio 2', cheapestAvailable([]));
 console.log('ejercicio 3', catalog(products));
 console.log('ejercicio 4', summary(products));
 console.log('ejercicio 4', summary([]));
+
+console.log("Ejercicio todolist comprobacion")
+console.log(main())
